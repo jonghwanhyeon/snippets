@@ -19,7 +19,7 @@ def oversampler(labels):
     return balanced_sampler(labels, number_of_samples_per_label_function=np.max, replacement=True)
 
 def undersampler(labels, replacement=False):
-    return balanced_sampler(labels, number_of_samples_per_label_function=np.min, replacement=replacement
+    return balanced_sampler(labels, number_of_samples_per_label_function=np.min, replacement=replacement)
 
 
 if __name__ == '__main__':
